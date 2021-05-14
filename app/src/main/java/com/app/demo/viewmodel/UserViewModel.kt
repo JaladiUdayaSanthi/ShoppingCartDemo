@@ -16,6 +16,11 @@ class UserViewModel(private val userDetailsUseCase: UserDetailsUseCase): ViewMod
 
     private lateinit var storeData:StoreDataResponseItem
 
+
+    private val _addItemList: MutableLiveData<List<StoreDataResponseItem>> = MutableLiveData()
+    val addItemList: LiveData<List<StoreDataResponseItem>>
+        get() = _addItemList
+
     init {
         getUserDetails()
     }
@@ -41,4 +46,11 @@ class UserViewModel(private val userDetailsUseCase: UserDetailsUseCase): ViewMod
 
     fun getStoreItemData() = storeData
 
+
+    fun addItemToCart(item: StoreDataResponseItem) {
+        _addItemList.postValue(listOf(item))
+    }
+
 }
+
+

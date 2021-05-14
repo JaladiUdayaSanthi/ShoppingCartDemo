@@ -6,15 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.navigation.fragment.findNavController
 import com.app.demo.adapter.StoreListAdapter
 import com.app.demo.component.ItemOffsetDecoration
 import com.app.demo.data.StoreDataResponseItem
 import com.app.demo.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_store.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
+
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -58,6 +58,9 @@ class StoreFragment : Fragment() {
             }
         })
     }
+
+
+
 }
 
 

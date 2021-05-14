@@ -85,10 +85,10 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/gotoBack"
+        android:id="@+id/addtoCart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/previous"
+        android:text="@string/add_to_cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
